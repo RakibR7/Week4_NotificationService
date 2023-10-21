@@ -1,4 +1,4 @@
-package ie.atu.openfeign;
+package ie.atu.registrationservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
