@@ -1,4 +1,4 @@
-package ie.atu.registrationservice;
+package ie.atu.NotificationService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

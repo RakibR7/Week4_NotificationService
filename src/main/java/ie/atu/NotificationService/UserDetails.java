@@ -1,4 +1,4 @@
-package ie.atu.registrationservice;
+package ie.atu.NotificationService;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
