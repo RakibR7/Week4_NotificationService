@@ -13,9 +13,13 @@ import java.util.Map;
 public class UserController {
     private RegistrationServiceClient registrationServiceClient;
 
+    @Autowired
+    public UserController(RegistrationServiceClient registrationServiceClient) {
+        this.registrationServiceClient = registrationServiceClient;
+    }
+
     @PostMapping("/confirm-and-register")
-    public Map<String, String> confirmAndRegister(@RequestBody UserDetails userDetails)
-    {
+    public Map<String, String> confirmAndRegister(@RequestBody UserDetails userDetails) {
         String confirm = registrationServiceClient.someDetails(userDetails);
         String response = confirm + "" + registrationServiceClient.someDetails(userDetails);
         Map<String, String> responseMessage = new HashMap<>();
@@ -23,4 +27,7 @@ public class UserController {
         return responseMessage;
     }
 }
+
+
+
 
